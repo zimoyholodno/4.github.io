@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+    <title>HTML + CSS</title>
+    </head>
+<body> 
+    <form class="form">
+        <div class="form__header">
+                <h2 align="center">❤Заявление о поступлении в школу Алфею❤ </h3><hr/>
+        </div>
+        <div class="form__body">
+         <div class="form__col">
+          <div class="form__group">
+            <label for="first-name">имя</label><br/>
+            <input 
+            type="text" 
+            name="first-name" 
+            id="first-name" 
+            class="form__control"
+            placeholder="имя"
+            />
+            </div>
+        <div class="form__group">
+           <label for="adress">измерение</label><br/>
+            <input
+            type="text"
+            name="adresse"
+            id="adresse"
+            class="form__control"
+            placeholder="измерение"
+          />
+        </div>
+          <div class="form__group">
+            <select class="select-css">
+                <option value="s0">выберите вашу силу</option>
+                <option value="s1">техномагия</option>
+                <option value="s2">электричество</option>
+                <option value="s3">иллюзия</option>
+                <option value="s4">свет</option>
+                <option value="s5">звезды</option>
+                <option value="s6">огонь</option>
+                <option value="s7">природа</option>
+                <option value="s8">животные</option>
+                <option value="s9">музыка</option>
+                <option value="s10">смех</option>
+                <option value="s11">вода</option>
+                <option value="s12">лёд</option>
+                <option value="s13">я аватар</option>
+            </select>
+         </div>
+         <div class="form__group">
+            <label for="transformation">владеешь ли трансформацией</label><br/>
+            <input 
+                type="radio"
+                name="otvet"
+                value="yes">
+                да
+            <input 
+                type="radio"
+                name="otvet" 
+                value="no">
+                нет
+        </div>
+        </div>  
+        <div class="form__col">
+            <div class="form__group">
+            <label for="last-name">фамилия</label><br/>
+            <input 
+            type="text" 
+            name="last-name" 
+            id="last-name" 
+            class="form__control"
+            placeholder="фамилия"
+            />
+        </div>
+        <div class="form__group">
+            <label for="date">дата рождения</label><br/>
+            <input
+                type="date"
+                name="created"
+                class="form__control"
+                />
+        </div>
+
+        <div class="form__group">
+            <label for="color">ваш любимый цвет</label><br/>
+            <input
+                type="color" 
+                name="bg" 
+                value="#ff0000"
+                class="form__control"
+                />
+          </div>
+         </div>
+        <div class="form__col">
+            <div class="form__group">
+              <label for="bio">расскажи о себе</label><br />
+              <textarea
+                name="bio"
+                id="bio"
+                cols="30"
+                rows="10"
+                class="form__control form__control--grow"
+		        placeholder="например, о семье,о питомцах,о хобби,о любимой еде,о романтических предпочтениях, об отношении к специалистам, ведьмам, Валтору, магам темного круга ❤"
+              ></textarea>
+            </div>
+        <div class="form__group">
+            <label for="estimation">оцените свой характер от 1 до 100</label><br/>
+            <input
+                type="number"
+                min="-100"
+                max="100"
+                value="1"
+                step="1"
+                class="form__control"
+                />
+          </div>
+         </div>
+        </div>
+        <div class="form__footer">
+            <div class="form__checkbox">
+              <input type="checkbox" name="magic" id="fairy" />
+              <label for="fairy" class="form__checkbox--label">я хочу стать лучшей феей</label><br/>
+            </div>
+            <div class="form__checkbox">
+                <input type="checkbox" name="magic" id="winx" />
+                <label for="winx" class="form__checkbox--label">я винкс</label><br/>
+              </div>
+              <div class="form__checkbox">
+                <input type="checkbox" name="magic" id="Valtor" />
+                <label for="Valtor"
+                   class="form__checkbox--label">я Валтор</label><br/>
+              </div>
+              </div>
+               <button type="submit" class="form__submit">
+        Отправить
+      </button>
+    </form>
+</body>
+</html>
